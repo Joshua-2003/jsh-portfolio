@@ -51,7 +51,7 @@ export const projects = [
       },
     ],
     urlRepo: "https://github.com/Yussha/car-rental",
-    urlWebsite: "https://yussha.github.io/car-rental/",
+    urlWebsite: "https://joshua-2003.github.io/car-rental/",
   },
 
   {
@@ -81,7 +81,7 @@ export const projects = [
       },
     ],
     urlRepo: "https://github.com/Yussha/e-commerce",
-    urlWebsite: "https://yussha.github.io/e-commerce/",
+    urlWebsite: "https://joshua-2003.github.io/e-commerce/",
 
   },
 
@@ -119,7 +119,7 @@ export const projects = [
       },
     ],
     urlRepo: "https://github.com/Yussha/StarBucksChallenge",
-    urlWebsite: "https://yussha.github.io/StarBucksChallenge/",
+    urlWebsite: " https://joshua-2003.github.io/StarBucksChallenge/",
   },
 
   {
@@ -135,6 +135,6 @@ export const projects = [
       },
     ],
     urlRepo: "https://github.com/Yussha/PracticeLandingPage",
-    urlWebsite: "https://yussha.github.io/PracticeLandingPage/",
+    urlWebsite: "https://joshua-2003.github.io/PracticeLandingPage/",
   },
 ];
