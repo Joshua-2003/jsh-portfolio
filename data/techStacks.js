@@ -9,7 +9,12 @@ import php from "../assets/php.png"
 import laravel from "../assets/Laravel.png"
 import database from "../assets/database.png"
 import vue from "../assets/Vuejs.png"
-import ts from "../assets/typescript.png"
+import node from "../assets/nodejs.png"
+import express from "../assets/Express.png"
+import django from "../assets/django.png"
+import python from "../assets/python.png"
+import mongodb from "../assets/MongoDB.png"
+import postgresql from "../assets/elephant.png"
 
 export const techStacks = [
   {
@@ -79,8 +84,32 @@ export const techStacks = [
   },
   {
     id: 12,
-    img: ts,
-    techName: "TypeScript",
+    img: node,
+    techName: "Node.js",
   },
-
+  {
+    id: 13,
+    img: express,
+    techName: "Express.js",
+  },
+  {
+    id: 14,
+    img: django,
+    techName: "Django",
+  },
+  {
+    id: 15,
+    img: python,
+    techName: "Python",
+  },
+  {
+    id: 16,
+    img: mongodb,
+    techName: "MongoDB",
+  },
+  {
+    id: 14,
+    img: postgresql,
+    techName: "PostgreSQL",
+  },
 ];

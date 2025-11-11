@@ -16,7 +16,7 @@ export default function About() {
       className={`${styles.sectionLayout} sm:pl-12 xl:pl-40 xl:pr-40 mr:pt-20 mr:pl-4 mr:pr-4 mr:pb-10 md:pb-28 lg:pb-36 xl:pb-36`}
     >
       <div className={`${styles.aboutContent} `}>
-        <div className="flex gap-x-20 flex-col sm:gap-y-4 md:flex-row md:pr-12">
+        <div className="flex flex-col gap-x-20 sm:gap-y-4 md:flex-row md:pr-12">
           <div className="w-3/4 sm:w-11/12 mr:w-full">
             <h1
               className={`text-5xl font-bold mb-12 sm:text-3xl md:text-5xl mr:text-2xl mr:mb-8`}
@@ -30,8 +30,8 @@ export default function About() {
             </p>
           </div>
           <div className="flex flex-col items-center sm:items-start">
-            <img className="w-44 rounded-lg md:w-64 " src={MyImage} alt="" />
-            <div className="flex gap-x-3 mt-3">
+            <img className="rounded-lg w-44 md:w-64 " src={MyImage} alt="" />
+            <div className="flex mt-3 gap-x-3">
               <a
                 href="https://www.facebook.com/joshua.bolasa?mibextid=ZbWKwL"
                 target="_blank"
@@ -67,20 +67,15 @@ export default function About() {
           <p
             className={`${styles.paraColor} xl:leading-8 sm:leading-7  mr:leading-8`}
           >
-            When I'm not busy with school work, I'll often writing a code or
-            enjoying my hobbies. I like playing online games, watching dramas,
-            and anime. I believe that taking a break and getting some fresh air
-            can help clear my mind when I encounter difficult coding problems.
-            It allows me to approach problem-solving with a fresh perspective
-            and renewed focus.
+            When I’m not immersed in coding or personal projects, I enjoy spending time on my hobbies such as playing online games, and watching dramas and anime. I believe that taking breaks and stepping away from the screen helps me maintain a healthy balance and clear mindset. This allows me to return to problem-solving with renewed focus and creativity, especially when tackling challenging coding tasks.
           </p>
         </div>
 
         <div className="mt-12">
-          <h1 className="text-2xl mb-8 sm:text-lg md:text-2xl mr:text-xl">
+          <h1 className="mb-8 text-2xl sm:text-lg md:text-2xl mr:text-xl">
             TECHNOLOGY STACK
           </h1>
-          <ul className="w-fit grid grid-cols-5 gap-8">
+          <ul className="grid grid-cols-5 gap-8 w-fit">
             {techStacks.map((techStack) => (
               <li
                 className="flex flex-col items-center gap-y-4"

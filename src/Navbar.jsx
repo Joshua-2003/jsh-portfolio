@@ -46,7 +46,7 @@ export default function Navbar({ setShowResponsiveNavbar }) {
         </div>
         <div className={`${styles.btnBg} p-2 sm:hidden lg:flex mr:hidden`}>
           <a
-            href="https://drive.google.com/file/d/1TFktNWY4SdqbtNBLyemNHZ0h6H2AGtSr/view"
+            href="https://drive.google.com/file/d/1c0UgYKIh-fz6DSg_IzS-aLwiimaaUi1t/view"
             target="_blank"
           >
             RESUME

@@ -21,7 +21,7 @@ export default function Hero() {
           className="mr:leading-8 sm:w-full md:w-full lg:w-full xl:w-3/4 2xl:w-3/4"
           style={{ color: "rgb(161 161 170" }}
         >
-          Meet Joshua Bolasa, a full-stack developer passionate about building complete and dynamic web applications. With expertise in both front-end technologies like HTML, CSS, and JavaScript, and back-end tools such as Laravel and MySQL, Joshua creates seamless user experiences backed by solid, efficient server-side logic. He crafts visually appealing, user-friendly interfaces while ensuring performance and scalability behind the scenes.
+          Meet Joshua Bolasa, a full-stack developer passionate about creating complete and dynamic web applications. He focuses on crafting seamless user experiences supported by efficient and reliable back-end systems. Joshua takes pride in building visually appealing, user-friendly interfaces while ensuring performance, scalability, and functionality behind the scenes.
         </p>
       </div>
     </section>
