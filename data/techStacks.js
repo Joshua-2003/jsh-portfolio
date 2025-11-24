@@ -11,8 +11,8 @@ import database from "../assets/database.png"
 import vue from "../assets/Vuejs.png"
 import node from "../assets/nodejs.png"
 import express from "../assets/Express.png"
-import django from "../assets/django.png"
-import python from "../assets/python.png"
+import java from "../assets/java.png"
+import jQuery from "../assets/jQuery.png"
 import mongodb from "../assets/MongoDB.png"
 import postgresql from "../assets/elephant.png"
 
@@ -94,13 +94,13 @@ export const techStacks = [
   },
   {
     id: 14,
-    img: django,
-    techName: "Django",
+    img: java,
+    techName: "Java",
   },
   {
     id: 15,
-    img: python,
-    techName: "Python",
+    img: jQuery,
+    techName: "jQuery",
   },
   {
     id: 16,
