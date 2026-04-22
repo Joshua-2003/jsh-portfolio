@@ -94,21 +94,6 @@ export const techStacks = [
   },
   {
     id: 14,
-    img: java,
-    techName: "Java",
-  },
-  {
-    id: 15,
-    img: jQuery,
-    techName: "jQuery",
-  },
-  {
-    id: 16,
-    img: mongodb,
-    techName: "MongoDB",
-  },
-  {
-    id: 14,
     img: postgresql,
     techName: "PostgreSQL",
   },
