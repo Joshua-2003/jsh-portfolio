@@ -15,6 +15,7 @@ import java from "../assets/java.png"
 import jQuery from "../assets/jQuery.png"
 import mongodb from "../assets/MongoDB.png"
 import postgresql from "../assets/elephant.png"
+import typescript from "../assets/typescript.png";
 
 export const techStacks = [
   {
@@ -97,4 +98,9 @@ export const techStacks = [
     img: postgresql,
     techName: "PostgreSQL",
   },
+  {
+    id: 15,
+    img: typescript,
+    techName: "TypeScript",
+  },  
 ];

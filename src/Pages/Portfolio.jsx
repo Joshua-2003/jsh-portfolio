@@ -6,9 +6,18 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Portfolio() {
   function handleOpenWebsite(url) {
+    if (!url) {
+      alert("No website available for this project.");
+      return;
+    }
+    
     window.open(url, '_blank')
   }
   function handleOpenRepo(url) {
+    if (!url) {
+      alert("No repository available for this project.");
+      return;
+    }
     window.open(url, '_blank')
   }
   return (
@@ -30,17 +39,17 @@ export default function Portfolio() {
               className={`${styles.card} flex p-3 gap-x-8 rounded-lg sm:flex-col sm:gap-y-4 lg:flex-row mr:flex-col mr:gap-y-8 `}
             >
               <div class="lg:w-[60%]">
-                <img className="w-full h-full  rounded-lg" src={project.img} alt="" />
+                <img className="w-full h-full rounded-lg" src={project.img} alt="" />
               </div>
 
               <div className="lg:w-[40%]">
-                <h1 className="text-2xl mb-4">{project.projectName}</h1>
+                <h1 className="mb-4 text-2xl">{project.projectName}</h1>
                 <p className={`${styles.paraColor} text-sm leading-7 mb-6`}>
                   {project.details}
                 </p>
 
                 {project.useTechnology.map((useTech) => (
-                  <ul className="flex gap-x-2 mb-6" key={project.id}>
+                  <ul className="flex mb-6 gap-x-2" key={project.id}>
                     <li>
                       <img className="w-4" src={useTech.tech1} alt="" />
                     </li>
@@ -53,6 +62,9 @@ export default function Portfolio() {
                     <li>
                       <img className="w-4" src={useTech.tech4} alt="" />
                     </li>
+                    <li>
+                      <img className="w-4" src={useTech.tech5} alt="" />
+                    </li>
                   </ul>
                 ))}
 
@@ -64,7 +76,7 @@ export default function Portfolio() {
                       onClick={() => handleOpenWebsite(project.urlWebsite)}
                       className={`${styles.viewProjectBtn} rounded-lg p-2 font-bold`}
                     >
-                      Take a look
+                      {project.urlWebsite ? "Take a look" : "No website available"}
                     </button>
                   )}
 
@@ -72,7 +84,10 @@ export default function Portfolio() {
                     onClick={() => handleOpenRepo(project.urlRepo)}
                     className={`${styles.viewProjectBtn} rounded-lg p-2 font-bold`}
                   >
-                    <FaGithub className="text-xl" />
+                    {project.urlRepo ? (<>
+                      <FaGithub className="inline mr-2" />
+                      View Repo
+                    </>) : "Confidential"}
                   </button>
                 </div>
               </div>

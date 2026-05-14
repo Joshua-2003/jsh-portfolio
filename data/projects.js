@@ -1,9 +1,11 @@
 import jshportfolioImg from "../assets/jshportfolio.jpg";
-import shoeShopProject from "../assets/shoeShopProject.jpg";
+import shoeShopProject from "../assets/shoeShopProject.png";
 import projectThumbnail1 from "../assets/projectThumbnail1.jpg";
 import starBucksImg from "../assets/StarBucksImg.jpg";
 import wordPressTemplateImg from "../assets/WordPressTemplateImg.jpg";
-import carRental from "../assets/carRental.jpg";
+import carRental from "../assets/carRental.png";
+import quotationImg from "../assets/quotation.jpg";
+import msu from "../assets/msu.png";
 import reactjs from "../assets/science.png";
 import tailwind from "../assets/Tailwind CSS.png";
 import html from "../assets/HTML5.png";
@@ -11,6 +13,10 @@ import css from "../assets/css-3.png";
 import js from "../assets/js-file.png";
 import bootstrap from "../assets/Bootstrap.png";
 import redux from "../assets/redux.png";
+import nodejs from "../assets/nodejs.png";  
+import typescript from "../assets/typescript.png";
+import express from "../assets/Express.png";
+import postgresql from "../assets/elephant.png"
 
 import citportalimg from "../assets/citportal.png";
 
@@ -22,6 +28,41 @@ import vue from "../assets/Vuejs.png"
 export const projects = [
   {
     id: 1,
+    img: msu,
+    projectName: "MSU - Marawi Library System",
+    details:
+      "MSU-Marawi Library Kiosk is a client-based library management kiosk system integrated with the Koha server, designed to streamline patron registration, self-checkout, book reservations, and transaction tracking through QR/barcode scanning and real-time database synchronization. Built with secure user dashboards, automated receipts, and open-shelf/closed-shelf borrowing support for an efficient library experience.",
+    useTechnology: [
+      {
+        tech1: reactjs,
+        tech2: nodejs,
+        tech3: typescript,
+        tech4: express,
+        tech5: postgresql,
+      },
+    ],
+    urlRepo: "",
+    urlWebsite: "",
+  },
+  {
+    id: 2,
+    img: quotationImg,
+    projectName: "Quotation System",
+    details:
+      "Construction Quotation System is a web-based project quotation management platform designed to streamline the construction quotation process between clients, estimators, managers, and administrators. The system allows clients to submit quotation requests, managers to assign estimators, and estimators to generate detailed quotations based on client-provided project information. It also includes an admin panel for user management, monitoring transactions, and overall system administration to ensure efficient workflow and coordination.",
+    useTechnology: [
+      {
+        tech1: reactjs,
+        tech2: nodejs,
+        tech3: typescript,
+        tech4: express,
+      },
+    ],
+    urlRepo: "https://github.com/Joshua-2003/QUOTATION_SYSTEM.git",
+    urlWebsite: "https://drive.google.com/drive/folders/1z_8bDcBVeHllId39P1B6jeWDdhXo0PT_?usp=sharing",
+  },
+  {
+    id: 3,
     img: citportalimg,
     projectName: "CIT Portal",
     details:
@@ -38,7 +79,7 @@ export const projects = [
   },
 
   {
-    id: 2,
+    id: 4,
     img: carRental,
     projectName: "Car Rental",
     details:
@@ -53,23 +94,8 @@ export const projects = [
     urlRepo: "https://github.com/Yussha/car-rental",
     urlWebsite: "https://joshua-2003.github.io/car-rental/",
   },
-
   {
-    id: 3,
-    img: jshportfolioImg,
-    projectName: "Official Jsh Portfolio",
-    details:
-      "My portfolio, built with React.js, features my projects and skills in a sleek design. I practiced Tailwind CSS for rapid styling, ensuring a modern and responsive layout. This portfolio demonstrates my proficiency in React.js and Tailwind CSS.",
-    useTechnology: [
-      {
-        tech1: reactjs,
-        tech2: tailwind,
-      },
-    ],
-    urlRepo: "https://github.com/Yussha/jsh-portfolio",
-  },
-  {
-    id: 4,
+    id: 5,
     img: shoeShopProject,
     projectName: "E-Commerce Shoe Store",
     details:
@@ -83,58 +109,5 @@ export const projects = [
     urlRepo: "https://github.com/Yussha/e-commerce",
     urlWebsite: "https://joshua-2003.github.io/e-commerce/",
 
-  },
-
-  {
-    id: 5,
-    img: projectThumbnail1,
-    projectName: "Project Portfolio",
-    details:
-      "This school assignment showcases my work using HTML, CSS, JavaScript, and Bootstrap. It features responsive design and interactive elements, with Bootstrap providing a clean, professional layout. This project highlights my front-end development skills.",
-    useTechnology: [
-      {
-        tech1: html,
-        tech2: css,
-        tech3: js,
-        tech4: bootstrap,
-      },
-    ],
-
-    urlRepo: "https://jshpersonalportfolio.netlify.app/",
-    urlWebsite: "https://jshpersonalportfolio.netlify.app/",
-
-  },
-
-  {
-    id: 6,
-    img: starBucksImg,
-    projectName: "Starbucks Website Front-End Challenge",
-    details:
-      "This project involves creating a Starbucks website clone to practice my HTML, CSS, and JavaScript skills. The challenge focuses on developing a responsive, visually appealing site with interactive features, simulating a real-world web development scenario. This project highlights my proficiency in front-end technologies and my ability to build user-friendly web applications.",
-    useTechnology: [
-      {
-        tech1: html,
-        tech2: css,
-        tech3: js,
-      },
-    ],
-    urlRepo: "https://github.com/Yussha/StarBucksChallenge",
-    urlWebsite: " https://joshua-2003.github.io/StarBucksChallenge/",
-  },
-
-  {
-    id: 7,
-    img: wordPressTemplateImg,
-    projectName: "WordPress Template Conversion Project",
-    details:
-      "This project involved converting a WordPress template into HTML and CSS code to practice my front-end development skills. The exercise focused on replicating the design and layout of the template, enhancing my understanding of HTML structure and CSS styling. This project demonstrates my ability to translate design templates into responsive web pages.",
-    useTechnology: [
-      {
-        tech1: html,
-        tech2: css,
-      },
-    ],
-    urlRepo: "https://github.com/Yussha/PracticeLandingPage",
-    urlWebsite: "https://joshua-2003.github.io/PracticeLandingPage/",
   },
 ];
