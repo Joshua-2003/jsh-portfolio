@@ -2,7 +2,8 @@ import MyImage from "../assets/mypicture.jpg";
 
 import styles from "./styles.module.css";
 import { IoMenuSharp } from "react-icons/io5";
-export default function Navbar({ setShowResponsiveNavbar }) {
+import { MdLightMode, MdDarkMode } from "react-icons/md";
+export default function Navbar({ setShowResponsiveNavbar, isDarkMode, setIsDarkMode }) {
   return (
     <nav
       className={`${styles.navBar} fixed left-0 right-0 top-0 z-50 sm:m-4 sm:w-screen sm:m-0 sm:p-8 lg:p-10 lg:m-0 xl:pt-10 xl:pl-40 xl:pr-40 mr:pt-8 mr:pb-8 mr:pl-4 mr:pr-4`}
@@ -44,7 +45,18 @@ export default function Navbar({ setShowResponsiveNavbar }) {
             </li>
           </ul>
         </div>
-        <div className={`${styles.btnBg} p-2 sm:hidden lg:flex mr:hidden`}>
+        <div className={`${styles.btnBg} p-2 sm:hidden lg:flex mr:hidden gap-x-2`}>
+          <button
+            onClick={() => setIsDarkMode(!isDarkMode)}
+            className="flex items-center justify-center"
+            title={isDarkMode ? "Light Mode" : "Dark Mode"}
+          >
+            {isDarkMode ? (
+              <MdLightMode className="text-xl" />
+            ) : (
+              <MdDarkMode className="text-xl" />
+            )}
+          </button>
           <a
             href="https://drive.google.com/file/d/1uWBlqS7fslFMwbxIcnWTrCpIrTnsFrnX/view" 
             target="_blank"
