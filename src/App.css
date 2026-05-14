@@ -6,4 +6,5 @@ main {
   color: #fff;
   overflow: hidden;
   background-color: #141515;
+  position: relative;
 }
