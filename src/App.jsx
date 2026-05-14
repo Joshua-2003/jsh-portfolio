@@ -138,6 +138,9 @@ function App() {
       <ResponsiveNavbar
         showResponsiveNavbar={showResponsiveNavbar}
         setShowResponsiveNavbar={setShowResponsiveNavbar}
+        setShowResponsiveNavbar={setShowResponsiveNavbar}
+        isDarkMode={isDarkMode}
+        setIsDarkMode={setIsDarkMode}
       />
     </main>
   );

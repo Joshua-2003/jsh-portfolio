@@ -45,25 +45,32 @@ export default function Navbar({ setShowResponsiveNavbar, isDarkMode, setIsDarkM
             </li>
           </ul>
         </div>
-        <div className={`${styles.btnBg} p-2 sm:hidden lg:flex mr:hidden gap-x-2`}>
-          <button
-            onClick={() => setIsDarkMode(!isDarkMode)}
-            className="flex items-center justify-center"
-            title={isDarkMode ? "Light Mode" : "Dark Mode"}
-          >
-            {isDarkMode ? (
-              <MdLightMode className="text-xl" />
-            ) : (
-              <MdDarkMode className="text-xl" />
-            )}
-          </button>
-          <a
-            href="https://drive.google.com/file/d/1uWBlqS7fslFMwbxIcnWTrCpIrTnsFrnX/view" 
-            target="_blank"
-          >
-            RESUME
-          </a>
+
+        <div className="flex gap-x-4">
+          <div className={`${styles.btnBg} p-2 sm:hidden lg:flex mr:hidden gap-x-2`}>
+            <a
+              href="https://drive.google.com/file/d/1uWBlqS7fslFMwbxIcnWTrCpIrTnsFrnX/view"
+              target="_blank"
+            >
+              RESUME
+            </a>
+          </div>
+
+          <div className={`${styles.btnBg} p-2 sm:hidden lg:flex mr:hidden gap-x-2`}>
+            <button
+              onClick={() => setIsDarkMode(!isDarkMode)}
+              className="flex items-center justify-center"
+              title={isDarkMode ? "Light Mode" : "Dark Mode"}
+            >
+              {isDarkMode ? (
+                <MdLightMode className="text-xl" />
+              ) : (
+                <MdDarkMode className="text-xl" />
+              )}
+            </button>
+          </div>
         </div>
+       
 
         <div
           onClick={() => setShowResponsiveNavbar(true)}
